@@ -90,6 +90,13 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'powerline/powerline'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ervandew/ag'
+
+" SnipMate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 Plugin 'altercation/vim-colors-solarized'
 
@@ -105,6 +112,9 @@ map <C-f> :CommandT<CR>
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
+
+" Eclim
+let g:EclimLocateFileNonProjectScope = 'ag'
 
 " Theme
 set cursorline
