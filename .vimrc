@@ -36,6 +36,9 @@ set cursorline
 " Terminal colors support
 set t_Co=256
 
+" Always show status line
+set laststatus=2
+
 " change the mapleader from \ to ,
 let mapleader=","
 
@@ -65,6 +68,9 @@ map <leader>ne :cn <CR>
 map <leader>Ne :cp <CR>
 map <leader>pe :cp <CR>
 map <leader>Pe :cn <CR>
+
+" Add powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim_kfir/Vundle.vim
