@@ -100,6 +100,7 @@ map <C-p> :CommandT<CR>
 
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
 
 " Theme
 set cursorline
