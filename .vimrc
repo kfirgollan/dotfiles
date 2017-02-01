@@ -79,12 +79,15 @@ Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'powerline/powerline'
+Plugin 'jlanzarotta/bufexplorer'
 
 Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" BufferExplorer
+map <leader>o :BufExplorer<CR>
 
 " CommandT
 map <C-p> :CommandT<CR>
