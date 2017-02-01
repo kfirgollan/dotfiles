@@ -59,6 +59,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Disable highlighting
+map <leader><CR> :noh<CR>
+
 " Paste mode
 set pastetoggle=<leader>pp
 
