@@ -86,6 +86,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'powerline/powerline'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'altercation/vim-colors-solarized'
 
