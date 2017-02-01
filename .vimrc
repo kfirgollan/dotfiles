@@ -1,22 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim_kfir/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'wincent/command-t'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'powerline/powerline'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Set the runtime path to include colors
+set rtp+=~/.vim_kfir/colors
 
 set nowrap        " don't wrap lines
 set backspace=indent,eol,start
@@ -73,5 +59,43 @@ map <C-l> <C-w>l
 " Paste mode
 set pastetoggle=<leader>pp
 
+" Errors window
+map <F9> :cwindow <CR>
+map <leader>ne :cn <CR>
+map <leader>Ne :cp <CR>
+map <leader>pe :cp <CR>
+map <leader>Pe :cn <CR>
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim_kfir/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'powerline/powerline'
+
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+" CommandT
+map <C-p> :CommandT<CR>
+
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
+
+" Theme
+set cursorline
+syntax enable
+set t_Co=256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
