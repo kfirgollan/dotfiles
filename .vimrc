@@ -97,7 +97,7 @@ filetype plugin indent on    " required
 map <leader>o :BufExplorer<CR>
 
 " CommandT
-map <C-p> :CommandT<CR>
+map <C-f> :CommandT<CR>
 
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
