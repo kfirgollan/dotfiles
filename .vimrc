@@ -91,6 +91,7 @@ Plugin 'powerline/powerline'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/ag'
+Plugin 'Valloric/YouCompleteMe'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -115,6 +116,7 @@ let g:NERDTreeWinPos = "right"
 
 " Eclim
 let g:EclimLocateFileNonProjectScope = 'ag'
+let g:EclimCompletionMethod = 'omnifunc'
 
 " Theme
 set cursorline
