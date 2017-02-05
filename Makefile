@@ -13,3 +13,6 @@ install-vim:
 install-command-t:
 	sudo apt-get install ruby-dev
 	(cd ~/.vim/bundle/command-t/ruby/command-t;ruby extconf.rb;make)
+
+install-packages:
+	vim -c "VundleInstall" -c "qa!"
