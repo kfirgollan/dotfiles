@@ -22,7 +22,6 @@ set incsearch     " show search matches as you type
 
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
-set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
@@ -64,6 +63,11 @@ map <leader><CR> :noh<CR>
 
 " Paste mode
 set pastetoggle=<leader>pp
+
+" Wild menu settings for completion
+set wildmenu
+set wildmode=longest:full,full
+set wildignore=*.swp,*.o,*.pyc,*.bak,*.gcno
 
 " Errors window
 map <F9> :cwindow <CR>
