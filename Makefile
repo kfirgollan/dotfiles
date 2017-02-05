@@ -1,6 +1,7 @@
 .PHONY: install install-powerline
 
-install: install-powerline
+install: install-vim install-packages install-ag install-command-t install-powerline
+	@echo "Installation completed!"
 
 install-powerline:
 	sudo pip install git+git://github.com/Lokaltog/powerline
@@ -13,6 +14,9 @@ install-vim:
 install-command-t:
 	sudo apt-get install ruby-dev
 	(cd ~/.vim/bundle/command-t/ruby/command-t;ruby extconf.rb;make)
+
+install-ag:
+	sudo apt-get install silversearcher-ag
 
 install-packages:
 	vim -c "VundleInstall" -c "qa!"
