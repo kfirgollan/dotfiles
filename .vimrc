@@ -88,14 +88,25 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Fast file opening
 Plugin 'wincent/command-t'
+" File explorer plugin
 Plugin 'scrooloose/nerdtree'
+" Git support for NERDTree
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Status line plugin
 Plugin 'powerline/powerline'
 Plugin 'jlanzarotta/bufexplorer'
+" Git plugin
 Plugin 'tpope/vim-fugitive'
+" Ag search plugin
 Plugin 'ervandew/ag'
+" Auto completion plugin
 Plugin 'Valloric/YouCompleteMe'
+" Auto commenting plugin
+Plugin 'tpope/vim-commentary'
+" Surround text elemnts
+Plugin 'tpope/vim-surround'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -103,6 +114,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" Themes
 Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
