@@ -107,6 +107,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
 " Surround text elemnts
 Plugin 'tpope/vim-surround'
+" Taglist / outline
+Plugin 'vim-scripts/taglist.vim'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
