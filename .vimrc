@@ -102,7 +102,8 @@ Plugin 'tpope/vim-fugitive'
 " Ag search plugin
 Plugin 'ervandew/ag'
 " Auto completion plugin
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 " Auto commenting plugin
 Plugin 'tpope/vim-commentary'
 " Surround text elemnts
@@ -135,6 +136,8 @@ let g:NERDTreeWinPos = "right"
 " Eclim
 let g:EclimLocateFileNonProjectScope = 'ag'
 let g:EclimCompletionMethod = 'omnifunc'
+
+let g:SuperTabDefaultCompletionType = 'context'
 
 " Theme
 set cursorline
