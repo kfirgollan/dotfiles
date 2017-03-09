@@ -7,6 +7,7 @@ install-powerline:
 	sudo pip install git+git://github.com/Lokaltog/powerline
 
 install-vim:
+	sudo apt-get install software-properties-common
 	sudo add-apt-repository ppa:jonathonf/vim
 	sudo apt update
 	sudo apt install vim vim-common vim-gtk vim-gtk-py2 vim-gui-common vim-runtime vim-tiny
@@ -19,4 +20,5 @@ install-ag:
 	sudo apt-get install silversearcher-ag
 
 install-packages:
+	sudo apt-get install exuberant-ctags
 	vim -c "VundleInstall" -c "qa!"
