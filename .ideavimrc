@@ -1,0 +1,4 @@
+set relativenumber
+set number
+
+map <C-f> :action GotoFile<CR>
