@@ -110,6 +110,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 " Taglist / outline
 Plugin 'vim-scripts/taglist.vim'
+" Tmux
+Plugin 'christoomey/vim-tmux-navigator'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
