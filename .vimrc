@@ -109,9 +109,11 @@ Plugin 'tpope/vim-commentary'
 " Surround text elemnts
 Plugin 'tpope/vim-surround'
 " Taglist / outline
-Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 " Tmux
 Plugin 'christoomey/vim-tmux-navigator'
+" clang-format
+Plugin 'rhysd/vim-clang-format'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -134,6 +136,9 @@ map <C-f> :CommandT<CR>
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
+
+" Tagbar
+map <leader>ts :TagbarToggle<CR>
 
 " Eclim
 let g:EclimLocateFileNonProjectScope = 'ag'
