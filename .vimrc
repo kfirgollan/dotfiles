@@ -103,7 +103,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/ag'
 " Auto completion plugin
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 " Auto commenting plugin
 Plugin 'tpope/vim-commentary'
 " Surround text elemnts
@@ -114,6 +114,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'christoomey/vim-tmux-navigator'
 " clang-format
 Plugin 'rhysd/vim-clang-format'
+" PEP8 tool
+Plugin 'andviro/flake8-vim'
+" AsyncRun - run commands in async manner.
+Plugin 'skywind3000/asyncrun.vim'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -153,3 +157,14 @@ set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+" AsyncRun
+augroup AsyncRunGroup
+	autocmd User AsyncRunStart call asyncrun#quickfix_toggle(8, 1)
+augroup END
+
+
+" quick fix
+augroup quickfix
+	autocmd QuickFixCmdPost * botright copen 8
+augroup END
