@@ -1,5 +1,8 @@
 .PHONY: install install-powerline
 
+init:
+	mkdir -p downloads
+
 install: install-vim install-packages install-ag install-command-t install-powerline
 	@echo "Installation completed!"
 
@@ -22,3 +25,7 @@ install-ag:
 install-packages:
 	sudo apt-get install exuberant-ctags
 	vim -c "VundleInstall" -c "qa!"
+
+install-zoom-win: init
+	wget http://www.vim.org/scripts/download_script.php?src_id=18151 -O downloads/zoom_win.vba.gz
+	vim -c ":e downloads/zoom_win.vba.gz" -c ":so %" -c ":q"

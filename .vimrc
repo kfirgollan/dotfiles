@@ -168,3 +168,6 @@ augroup END
 augroup quickfix
 	autocmd QuickFixCmdPost * botright copen 8
 augroup END
+
+" ZoomVim
+map <C-w>z :ZoomWin<CR>
