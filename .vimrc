@@ -115,7 +115,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 " clang-format
 Plugin 'rhysd/vim-clang-format'
 " PEP8 tool
-Plugin 'andviro/flake8-vim'
+" Plugin 'andviro/flake8-vim'
+" Code linting tool
+Plugin 'w0rp/ale'
+" Rainbow colors for parantheses.
+Plugin 'luochen1990/rainbow'
 " AsyncRun - run commands in async manner.
 Plugin 'skywind3000/asyncrun.vim'
 
@@ -171,3 +175,16 @@ augroup END
 
 " ZoomVim
 map <C-w>z :ZoomWin<CR>
+
+" === ale ===
+" let g:ale_python_pylint_executable = $HOME .'/.virtualenvs/nvim3/bin/pylint'
+let g:ale_linters = {
+\   'python': ['pylint'],
+\}
+let g:ale_open_list = 0
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
+
+" === rainbow ===
+let g:rainbow_active = 1
