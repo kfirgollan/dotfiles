@@ -79,70 +79,77 @@ map <leader>Pe :cn <CR>
 " Add powerline
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
+call plug#begin('~/.vim/plugged')
+
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim_kfir/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim_kfir/Vundle.vim
+"call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Plug 'VundleVim/Vundle.vim'
 
 " Fast file opening
-Plugin 'wincent/command-t'
+" Plug 'wincent/command-t'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " File explorer plugin
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 " Git support for NERDTree
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " Status line plugin
-Plugin 'powerline/powerline'
-Plugin 'jlanzarotta/bufexplorer'
+Plug 'powerline/powerline'
+Plug 'jlanzarotta/bufexplorer'
 " Git plugin
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " Ag search plugin
-Plugin 'ervandew/ag'
+Plug 'ervandew/ag'
 " Auto completion plugin
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'ervandew/supertab'
+"Plug 'Valloric/YouCompleteMe'
+"Plug 'ervandew/supertab'
 " Auto commenting plugin
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 " Surround text elemnts
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 " Taglist / outline
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 " Tmux
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 " clang-format
-Plugin 'rhysd/vim-clang-format'
+Plug 'rhysd/vim-clang-format'
 " PEP8 tool
-" Plugin 'andviro/flake8-vim'
+" Plug 'andviro/flake8-vim'
 " Code linting tool
-Plugin 'w0rp/ale'
+Plug 'w0rp/ale'
 " Rainbow colors for parantheses.
-Plugin 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow'
 " AsyncRun - run commands in async manner.
-Plugin 'skywind3000/asyncrun.vim'
+Plug 'skywind3000/asyncrun.vim'
+
+Plug 'Chiel92/vim-autoformat'
 
 " SnipMate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 " Themes
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
-call vundle#end()            " required
+call plug#end()
+" call vundle#end()            " required
 filetype plugin indent on    " required
 
 " BufferExplorer
 map <leader>o :BufExplorer<CR>
 
-" CommandT
-map <C-f> :CommandT<CR>
+" FZF
+map <C-f> :FZF<CR>
 
 " NERDTree
 map <leader>nn :NERDTreeToggle<CR>
+let g:NERDTreeWinSize = 60
 let g:NERDTreeWinPos = "right"
 
 " Tagbar
@@ -153,6 +160,9 @@ let g:EclimLocateFileNonProjectScope = 'ag'
 let g:EclimCompletionMethod = 'omnifunc'
 
 let g:SuperTabDefaultCompletionType = 'context'
+
+" Enable mouse mode
+set mouse=a
 
 " Theme
 set cursorline
