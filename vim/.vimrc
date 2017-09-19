@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " Set the runtime path to include colors
-set rtp+=~/.vim_kfir/colors
+set rtp+=~/dotfiles/vim/colors
 
 set nowrap        " don't wrap lines
 set backspace=indent,eol,start

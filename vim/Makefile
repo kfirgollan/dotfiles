@@ -24,7 +24,11 @@ install-ag:
 
 install-packages:
 	sudo apt-get install exuberant-ctags
-	vim -c "VundleInstall" -c "qa!"
+
+install-vim-plug:
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	vim -c ":PlugInstall" -c ":q"
 
 install-zoom-win: init
 	wget http://www.vim.org/scripts/download_script.php?src_id=18151 -O downloads/zoom_win.vba.gz
