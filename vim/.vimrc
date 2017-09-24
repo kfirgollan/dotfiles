@@ -128,6 +128,10 @@ Plug 'skywind3000/asyncrun.vim'
 
 Plug 'Chiel92/vim-autoformat'
 
+" riv.vim - Viewing structured text on the web.
+Plug 'Rykka/InstantRst'
+Plug 'Rykka/riv.vim'
+
 " SnipMate
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
