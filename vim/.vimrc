@@ -117,16 +117,20 @@ Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 " clang-format
 Plug 'rhysd/vim-clang-format'
-" PEP8 tool
-" Plug 'andviro/flake8-vim'
-" Code linting tool
-Plug 'w0rp/ale'
 " Rainbow colors for parantheses.
 Plug 'luochen1990/rainbow'
 " AsyncRun - run commands in async manner.
 Plug 'skywind3000/asyncrun.vim'
 
 Plug 'Chiel92/vim-autoformat'
+
+" Python plugins
+" PEP8 tool
+" Plug 'andviro/flake8-vim'
+" Code linting tool
+Plug 'w0rp/ale'
+" Code completion based on jedi
+Plug 'davidhalter/jedi-vim'
 
 " riv.vim - Viewing structured text on the web.
 Plug 'Rykka/InstantRst'
