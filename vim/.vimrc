@@ -53,10 +53,12 @@ map <leader>tn :tabnew<CR>
 map <leader>tc :tabclose<CR>
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" Note that this is bit conflicts with tmux-navigation plugin thus it was
+" removed.
+" map <C-h> <C-w>h
+" map <C-j> <C-w>j
+" map <C-k> <C-w>k
+" map <C-l> <C-w>l
 
 " Disable highlighting
 map <leader><CR> :noh<CR>
@@ -126,7 +128,7 @@ Plug 'Chiel92/vim-autoformat'
 
 " Python plugins
 " PEP8 tool
-" Plug 'andviro/flake8-vim'
+Plug 'andviro/flake8-vim'
 " Code linting tool
 Plug 'w0rp/ale'
 " Code completion based on jedi
