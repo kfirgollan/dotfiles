@@ -55,6 +55,8 @@ export SCM_CHECK=true
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
+export PATH=${PATH}:${HOME}/dotfiles/scripts
+
 # Load all the scripts in the directory
 while read script; do
 	source "${script}"
