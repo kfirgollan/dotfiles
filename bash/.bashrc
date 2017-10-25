@@ -1,7 +1,7 @@
 export EDITOR='vim'
 
 # Path to the bash it configuration
-export BASH_IT="/home/dn/.bash_it"
+export BASH_IT="${HOME}/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
