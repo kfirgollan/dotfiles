@@ -105,7 +105,9 @@ Plug 'jlanzarotta/bufexplorer'
 " Git plugin
 Plug 'tpope/vim-fugitive'
 " Ag search plugin
-Plug 'ervandew/ag'
+" Plug 'ervandew/ag'
+" RipGrep search plugin
+Plug 'jremmen/vim-ripgrep'
 " Auto completion plugin
 "Plug 'Valloric/YouCompleteMe'
 "Plug 'ervandew/supertab'
