@@ -57,6 +57,11 @@ source "$BASH_IT"/bash_it.sh
 
 export PATH=${PATH}:${HOME}/dotfiles/scripts
 
+# If rust is installed load up the env
+if [[ -e "${HOME}/.cargo/env" ]]; then
+	source ${HOME}/.cargo/env
+fi
+
 # Load all the scripts in the directory
 while read script; do
 	source "${script}"
