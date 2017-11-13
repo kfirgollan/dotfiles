@@ -109,8 +109,9 @@ Plug 'tpope/vim-fugitive'
 " RipGrep search plugin
 Plug 'jremmen/vim-ripgrep'
 " Auto completion plugin
-"Plug 'Valloric/YouCompleteMe'
-"Plug 'ervandew/supertab'
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 " Auto commenting plugin
 Plug 'tpope/vim-commentary'
 " Surround text elemnts
@@ -167,12 +168,6 @@ let g:NERDTreeWinPos = "right"
 " Tagbar
 map <leader>ts :TagbarToggle<CR>
 
-" Eclim
-let g:EclimLocateFileNonProjectScope = 'ag'
-let g:EclimCompletionMethod = 'omnifunc'
-
-let g:SuperTabDefaultCompletionType = 'context'
-
 " Enable mouse mode
 set mouse=a
 
@@ -210,3 +205,8 @@ let g:ale_lint_on_text_changed = 'never'
 
 " === rainbow ===
 let g:rainbow_active = 1
+
+" === deoplete ===
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = "complete"
+let g:deoplete#auto_completion_start_length = 1
