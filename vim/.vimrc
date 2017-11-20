@@ -210,3 +210,6 @@ let g:rainbow_active = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = "complete"
 let g:deoplete#auto_completion_start_length = 1
+
+" === SConstruct as python ===
+au BufRead,BufNewFile SConstruct set filetype=python
