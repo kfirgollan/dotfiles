@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set encoding=utf-8
 
 " Set the runtime path to include colors
 set rtp+=~/dotfiles/vim/colors
