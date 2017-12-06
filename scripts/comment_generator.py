@@ -24,5 +24,5 @@ def main():
     print ' ' + args.sign * args.length + args.comment
 
 
-if __name__ == ‘__main__‘:
+if __name__ == '__main__':
     main()
