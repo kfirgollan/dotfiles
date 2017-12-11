@@ -2,6 +2,11 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set encoding=utf-8
 
+" Fix ~0[[STR]]1~ bug
+" One can also call printf "\e[?2004l"
+" https://github.com/vim/vim/issues/1404#issuecomment-274723175
+set t_BE=
+
 " Set the runtime path to include colors
 set rtp+=~/dotfiles/vim/colors
 
@@ -127,6 +132,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'luochen1990/rainbow'
 " AsyncRun - run commands in async manner.
 Plug 'skywind3000/asyncrun.vim'
+Plug 'fach/vim-yang'
 
 Plug 'Chiel92/vim-autoformat'
 
