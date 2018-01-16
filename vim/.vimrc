@@ -133,8 +133,10 @@ Plug 'luochen1990/rainbow'
 " AsyncRun - run commands in async manner.
 Plug 'skywind3000/asyncrun.vim'
 Plug 'fach/vim-yang'
+Plug 'jsfaint/gen_tags.vim'
 
 Plug 'Chiel92/vim-autoformat'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Python plugins
 " PEP8 tool
@@ -220,3 +222,6 @@ let g:deoplete#auto_completion_start_length = 1
 
 " === SConstruct as python ===
 au BufRead,BufNewFile SConstruct set filetype=python
+
+" gen_tags
+map <F5> :GenGTAGS<CR>
