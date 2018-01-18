@@ -126,6 +126,10 @@ Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
+" codefmt for formatting
+Plug 'google/vim-maktaba'
+Plug 'google/vim-glaive'
+Plug 'google/vim-codefmt'
 " clang-format
 Plug 'rhysd/vim-clang-format'
 " Rainbow colors for parantheses.
