@@ -108,6 +108,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Status line plugin
 Plug 'powerline/powerline'
 Plug 'jlanzarotta/bufexplorer'
+" Header/Source switcher
+Plug 'vim-scripts/a.vim'
 " Git plugin
 Plug 'tpope/vim-fugitive'
 " Ag search plugin
