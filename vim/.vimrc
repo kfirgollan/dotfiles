@@ -231,3 +231,10 @@ au BufRead,BufNewFile SConstruct set filetype=python
 
 " gen_tags
 map <F5> :GenGTAGS<CR>
+
+" Split vertically, like any normal person would.
+set splitright
+set splitbelow
+
+" Close preview window
+map <C-w>{ :pc!<CR>
