@@ -120,6 +120,7 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'zchee/deoplete-clang'
 " Auto commenting plugin
 Plug 'tpope/vim-commentary'
 " Surround text elemnts
@@ -225,6 +226,10 @@ let g:rainbow_active = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = "complete"
 let g:deoplete#auto_completion_start_length = 1
+"
+" Clang, defaults, change on local machine for different version.
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-3.8/lib/libclang.so.1"
+let g:deoplete#sources#clang#clang_header = "/usr/lib/llvm-3.8/lib/clang/3.8.0/include/"
 
 " === SConstruct as python ===
 au BufRead,BufNewFile SConstruct set filetype=python
