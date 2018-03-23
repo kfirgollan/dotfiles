@@ -57,3 +57,7 @@ git_blob_owner() {
 my_branches() {
 	git branch -a | grep kfir
 }
+
+git_cur_branch() {
+	git rev-parse --abbrev-ref HEAD
+}
