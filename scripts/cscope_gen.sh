@@ -8,9 +8,14 @@ echo ${src_files} | tr " " "\n" > cscope.files
 echo "Rebuilding cscope db..."
 # -b: just build
 # -q: create inverted index
-cscope -b -q
+cscope -b -q &
+cscope_pid=$!
 
 echo "Rebuilding ctags db..."
 
 # update ctags as well
-etags ${src_files}
+etags ${src_files} &
+etags_pid=$!
+
+wait ${cscope_pid}
+wait ${etags_pid}
