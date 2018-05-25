@@ -2,7 +2,7 @@
 dir=$2
 
 echo "Locating files..."
-src_files=$(find ${dir} -name '*.c' -o -name "*.h" | xargs realpath)
+src_files=$(find ${dir} -type f \( -name '*.c' -o -name "*.h" \) | xargs realpath)
 echo ${src_files} | tr " " "\n" > cscope.files
 
 echo "Rebuilding cscope db..."
