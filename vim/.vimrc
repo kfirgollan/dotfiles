@@ -97,6 +97,8 @@ call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle, required
 " Plug 'VundleVim/Vundle.vim'
+" Editor config support
+Plug 'editorconfig/editorconfig-vim'
 
 " Fast file opening
 " Plug 'wincent/command-t'
