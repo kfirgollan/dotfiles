@@ -114,6 +114,8 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'vim-scripts/a.vim'
 " Git plugin
 Plug 'tpope/vim-fugitive'
+" Remove redundant whitespaces
+Plug 'ntpeters/vim-better-whitespace'
 " Ag search plugin
 " Plug 'ervandew/ag'
 " RipGrep search plugin
