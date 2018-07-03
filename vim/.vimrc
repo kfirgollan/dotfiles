@@ -247,3 +247,6 @@ set splitbelow
 
 " Close preview window
 map <C-w>{ :pc!<CR>
+
+" better whitepsace config
+let g:strip_whitespace_on_save=1
