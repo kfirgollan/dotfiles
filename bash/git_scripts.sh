@@ -61,3 +61,7 @@ my_branches() {
 git_cur_branch() {
 	git rev-parse --abbrev-ref HEAD
 }
+
+my_commits() {
+	git log --author=kfir --since="$(date --date '7 days ago')" --oneline
+}
