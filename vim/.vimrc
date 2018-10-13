@@ -121,10 +121,9 @@ Plug 'ntpeters/vim-better-whitespace'
 " RipGrep search plugin
 Plug 'jremmen/vim-ripgrep'
 " Auto completion plugin
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'zchee/deoplete-clang'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'ajh17/vimcompletesme'
 " Auto commenting plugin
 Plug 'tpope/vim-commentary'
 " Surround text elemnts
@@ -250,3 +249,21 @@ map <C-w>{ :pc!<CR>
 
 " better whitepsace config
 let g:strip_whitespace_on_save=1
+
+" Configure clangd for vim-lsp
+if executable('clangd')
+    augroup lsp_clangd
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+                    \ 'name': 'clangd',
+                    \ 'cmd': {server_info->['clangd']},
+                    \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+                    \ })
+        autocmd FileType c setlocal omnifunc=lsp#complete
+        autocmd FileType cpp setlocal omnifunc=lsp#complete
+        autocmd FileType objc setlocal omnifunc=lsp#complete
+        autocmd FileType objcpp setlocal omnifunc=lsp#complete
+    augroup end
+endif
+
+
