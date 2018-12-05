@@ -12,7 +12,7 @@ export BASH_IT_THEME='powerline'
 
 # Powerline theme configuration.
 # Taken from: https://github.com/Bash-it/bash-it/tree/master/themes/powerline
-export POWERLINE_PROMPT="user_info python_venv cwd scm"
+export POWERLINE_PROMPT="hostname user_info python_venv cwd scm"
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.

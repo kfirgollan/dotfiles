@@ -187,8 +187,8 @@ let g:NERDTreeWinPos = "right"
 " Tagbar
 map <leader>ts :TagbarToggle<CR>
 
-" Enable mouse mode
-set mouse=a
+" Disable mouse mode
+set mouse=
 
 " Theme
 set cursorline
